@@ -115,3 +115,15 @@ body {
     color: white; /* changed */
     text-decoration: none;
 }
+
+/* Keyframe animation to blink text */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Apply animation to the blinking text element */
+.blinking-text {
+    animation: blink 1s linear infinite; /* Faster blinking */
+}
