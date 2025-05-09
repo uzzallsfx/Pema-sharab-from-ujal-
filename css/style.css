@@ -6,7 +6,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     overflow: hidden;
-    font-size: 14px; /* Reduced font size */
+    font-size: 12px; /* Further reduced font size */
     color: white;
     height: 100vh;
 }
@@ -20,32 +20,32 @@ body {
 }
 
 .mb-box {
-    width: 350px; /* Reduced width */
+    width: 280px; /* Smaller width */
     height: auto;
-    padding: 20px; /* Reduced padding */
+    padding: 10px; /* Reduced padding */
     z-index: 2;
     overflow: hidden;
     position: absolute;
-    top: 30%;
+    top: 25%; /* Slightly adjusted vertical position */
     left: 50%;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -25%);
 }
 
 .bb {
-    width: 350px; /* Reduced width */
-    max-height: 600px; /* Reduced max height */
-    border-radius: 12px;
-    box-shadow: 0px 0px 20px #999; /* Reduced shadow size */
+    width: 280px; /* Smaller width */
+    max-height: 500px; /* Reduced max height */
+    border-radius: 10px; /* Slightly smaller border radius */
+    box-shadow: 0px 0px 15px #999; /* Reduced shadow size */
     overflow: hidden;
     background: url(../images/alpha-bg.png);
-    backdrop-filter: blur(5px); /* Reduced blur effect */
+    backdrop-filter: blur(3px); /* Reduced blur effect */
 }
 
 .bb h2 {
-    margin: 15px auto 0px;
-    padding: 20px 0px 10px; /* Reduced padding */
-    width: 270px; /* Reduced width */
-    font-size: 20px; /* Reduced font size */
+    margin: 10px auto 0px;
+    padding: 15px 0px 8px; /* Reduced padding */
+    width: 230px; /* Reduced width */
+    font-size: 16px; /* Smaller font size */
     text-align: center;
     color: white;
     white-space: nowrap;
@@ -55,18 +55,18 @@ body {
 
 .bb_text {
     height: auto;
-    padding: 20px 40px; /* Reduced padding */
-    text-indent: 2em; /* Reduced indent */
-    line-height: 28px; /* Reduced line height */
-    font-size: 16px; /* Reduced font size */
+    padding: 15px 30px; /* Reduced padding */
+    text-indent: 2em; /* Slightly reduced indent */
+    line-height: 24px; /* Reduced line height */
+    font-size: 12px; /* Smaller font size */
     color: white;
     overflow: auto;
-    max-height: 500px; /* Reduced max height */
+    max-height: 400px; /* Reduced max height */
     overflow-y: auto;
 }
 
 .middle-letter {
-    font-size: 12px; /* Smaller font size */
+    font-size: 8px; /* Significantly smaller font size */
     text-align: center;
     margin-top: 50px;
     transform: translateY(-50%);
@@ -78,10 +78,10 @@ body {
 
 .bb_myname {
     text-align: right;
-    padding: 0px 40px 20px; /* Reduced padding */
-    line-height: 28px; /* Reduced line height */
+    padding: 0px 20px 10px; /* Reduced padding */
+    line-height: 24px; /* Reduced line height */
     color: white;
-    font-size: 16px; /* Reduced font size */
+    font-size: 12px; /* Smaller font size */
 }
 
 .musicbg {
@@ -103,8 +103,8 @@ body {
     text-align: center;
     color: white;
     position: fixed;
-    bottom: 50px;
-    font-size: 16px; /* Reduced font size */
+    bottom: 30px; /* Reduced bottom margin */
+    font-size: 12px; /* Smaller font size */
 }
 
 .banquan a {
