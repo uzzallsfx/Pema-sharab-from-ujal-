@@ -6,7 +6,8 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     overflow: hidden;
-    font-size: 18px; /* Base font size increased */
+    font-size: 18px;
+    color: white; /* Global text color */
 }
 
 #bgc {
@@ -43,9 +44,9 @@ body {
     margin: 15px auto 0px;
     padding: 20px 0px 10px;
     width: 280px;
-    font-size: 22px; /* Increased from 18px */
+    font-size: 22px;
     text-align: center;
-    color: #883a78;
+    color: white; /* changed */
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -55,9 +56,9 @@ body {
     height: 100%;
     padding: 20px 40px;
     text-indent: 2em;
-    line-height: 30px; /* Improved line spacing */
-    font-size: 18px; /* Increased from 16px */
-    color: #303030;
+    line-height: 30px;
+    font-size: 18px;
+    color: white; /* changed */
     overflow: auto;
 }
 
@@ -65,8 +66,8 @@ body {
     text-align: right;
     padding: 0px 40px 20px;
     line-height: 30px;
-    color: #883a78;
-    font-size: 18px; /* Optional: match body */
+    color: white; /* changed */
+    font-size: 18px;
 }
 
 .mb-x {
@@ -79,12 +80,12 @@ body {
 .love_time {
     width: 100%;
     text-align: center;
-    font-size: 16px; /* Increased from 14px */
-    color: #da8e9c;
+    font-size: 16px;
+    color: white; /* changed */
 }
 
 .love_time span {
-    color: #da8e9c;
+    color: white; /* changed */
 }
 
 .musicbg {
@@ -104,13 +105,13 @@ body {
 .banquan {
     width: 100%;
     text-align: center;
-    color: #888;
+    color: white; /* changed */
     position: fixed;
     bottom: 30px;
-    font-size: 16px; /* Increased from 14px */
+    font-size: 16px;
 }
 
 .banquan a {
-    color: #888;
+    color: white; /* changed */
     text-decoration: none;
 }
