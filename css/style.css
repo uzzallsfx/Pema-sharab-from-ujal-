@@ -6,9 +6,9 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     overflow: hidden;
-    font-size: 18px;
+    font-size: 22px; /* Increased base font size */
     color: white;
-    height: 100vh; /* Set height to 100% of the viewport */
+    height: 100vh; /* Full viewport height */
 }
 
 #bgc {
@@ -20,32 +20,32 @@ body {
 }
 
 .mb-box {
-    width: 416px;
+    width: 500px; /* Increased width */
     height: auto;
-    padding: 20px;
+    padding: 30px; /* Increased padding */
     z-index: 2;
     overflow: hidden;
     position: absolute;
-    top: 40%; /* Position it slightly lower */
+    top: 30%; /* Adjusted position for better vertical alignment */
     left: 50%;
-    transform: translate(-50%, -40%); /* Adjust to center vertically */
+    transform: translate(-50%, -30%); /* Adjusted vertical alignment */
 }
 
 .bb {
-    width: 416px;
-    max-height: 609px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px #999;
+    width: 500px; /* Increased width */
+    max-height: 700px; /* Increased max height */
+    border-radius: 12px; /* Slightly rounded corners */
+    box-shadow: 0px 0px 30px #999; /* Increased shadow size */
     overflow: hidden;
     background: url(../images/alpha-bg.png);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(7px); /* Slightly stronger blur */
 }
 
 .bb h2 {
-    margin: 15px auto 0px;
-    padding: 20px 0px 10px;
-    width: 280px;
-    font-size: 22px;
+    margin: 20px auto 0px;
+    padding: 30px 0px 15px; /* Increased padding */
+    width: 320px; /* Increased width */
+    font-size: 28px; /* Increased font size */
     text-align: center;
     color: white;
     white-space: nowrap;
@@ -55,35 +55,35 @@ body {
 
 .bb_text {
     height: auto;
-    padding: 20px 40px;
-    text-indent: 2em;
-    line-height: 30px;
-    font-size: 18px;
+    padding: 30px 50px; /* Increased padding */
+    text-indent: 3em; /* Increased indent */
+    line-height: 36px; /* Increased line height */
+    font-size: 22px; /* Increased font size */
     color: white;
     overflow: auto;
-    max-height: 450px; /* Allow more space for the text to fit */
-    overflow-y: auto; /* Scrollbar if text overflows */
+    max-height: 550px; /* Increased max height */
+    overflow-y: auto; /* Scrollbar if content overflows */
 }
 
 .bb_myname {
     text-align: right;
-    padding: 0px 40px 20px;
-    line-height: 30px;
+    padding: 0px 50px 30px; /* Increased padding */
+    line-height: 36px; /* Increased line height */
     color: white;
-    font-size: 18px;
+    font-size: 22px; /* Increased font size */
 }
 
 .mb-x {
-    width: 500px;
+    width: 600px; /* Increased width */
     height: auto;
     overflow: hidden;
-    margin-top: 260px;
+    margin-top: 300px; /* Increased margin-top */
 }
 
 .love_time {
     width: 100%;
     text-align: center;
-    font-size: 16px;
+    font-size: 22px; /* Increased font size */
     color: white;
 }
 
@@ -92,11 +92,11 @@ body {
 }
 
 .musicbg {
-    margin-left: -120px;
+    margin-left: -140px; /* Adjusted position */
     filter: alpha(opacity=50);
     opacity: .5;
     position: fixed;
-    bottom: 60px;
+    bottom: 80px; /* Adjusted position */
     left: 50%;
 }
 
@@ -110,8 +110,8 @@ body {
     text-align: center;
     color: white;
     position: fixed;
-    bottom: 30px;
-    font-size: 16px;
+    bottom: 50px; /* Adjusted position */
+    font-size: 20px; /* Increased font size */
 }
 
 .banquan a {
