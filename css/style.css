@@ -6,6 +6,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     overflow: hidden;
+    font-size: 18px; /* Base font size increased */
 }
 
 #bgc {
@@ -42,7 +43,7 @@ body {
     margin: 15px auto 0px;
     padding: 20px 0px 10px;
     width: 280px;
-    font-size: 18px;
+    font-size: 22px; /* Increased from 18px */
     text-align: center;
     color: #883a78;
     white-space: nowrap;
@@ -54,8 +55,8 @@ body {
     height: 100%;
     padding: 20px 40px;
     text-indent: 2em;
-    line-height: 28px;
-    font-size: 16px;
+    line-height: 30px; /* Improved line spacing */
+    font-size: 18px; /* Increased from 16px */
     color: #303030;
     overflow: auto;
 }
@@ -65,6 +66,7 @@ body {
     padding: 0px 40px 20px;
     line-height: 30px;
     color: #883a78;
+    font-size: 18px; /* Optional: match body */
 }
 
 .mb-x {
@@ -77,7 +79,7 @@ body {
 .love_time {
     width: 100%;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px; /* Increased from 14px */
     color: #da8e9c;
 }
 
@@ -105,7 +107,7 @@ body {
     color: #888;
     position: fixed;
     bottom: 30px;
-    font-size: 14px;
+    font-size: 16px; /* Increased from 14px */
 }
 
 .banquan a {
