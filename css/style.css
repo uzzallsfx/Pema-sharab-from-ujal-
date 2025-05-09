@@ -5,7 +5,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     overflow: hidden;
-    font-size: 16px; /* Smaller font size */
+    font-size: 14px;
     color: white;
     height: 100vh;
 }
@@ -13,14 +13,13 @@ body {
 #bgc {
     width: 100%;
     height: 100%;
-    background: url(../img/IMG_20250509_215012_423.jpg) center top #f4f4f4;
+    background: url(../img/IMG_20250509_215012_423.jpg) center top no-repeat;
     background-size: cover;
-    overflow: hidden;
 }
 
 .mb-box {
-    width: 350px; /* Smaller width */
-    padding: 20px;
+    width: 280px;
+    padding: 15px;
     position: absolute;
     top: 30%;
     left: 50%;
@@ -29,38 +28,38 @@ body {
 }
 
 .bb {
-    width: 350px; /* Match box size */
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px #999;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #999;
     background: url(../images/alpha-bg.png);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(5px);
     overflow: hidden;
 }
 
 .bb h2 {
-    margin: 15px auto 0;
-    padding: 20px 0 10px;
-    font-size: 20px; /* Smaller font */
+    margin: 10px auto 0;
+    padding: 15px 0 10px;
+    font-size: 16px;
     text-align: center;
     color: white;
     white-space: nowrap;
-    text-overflow: ellipsis;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .bb_text {
-    padding: 20px 30px;
+    padding: 15px 20px;
     text-indent: 2em;
-    line-height: 28px;
-    font-size: 16px; /* Smaller font */
-    color: white;
-    max-height: 400px;
+    line-height: 24px;
+    font-size: 14px;
+    max-height: 300px;
     overflow-y: auto;
+    color: white;
 }
 
 .bb_myname {
     text-align: right;
-    padding: 0 30px 20px;
-    font-size: 16px; /* Smaller font */
+    padding: 0 20px 15px;
+    font-size: 14px;
     color: white;
 }
