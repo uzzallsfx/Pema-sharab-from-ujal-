@@ -1,51 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bilbo+Swash+Caps&family=Inter:opsz,wght@14..32,500&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
-body{
-    position: relative;
-    font-family: "Archivo", serif;
-    background-color: #f4f4f4; margin: 0; overflow:hidden;}
-#bgc {
-    width: 100%;
-    height: 100%;
-    background: url(../img/Messenger_creation_27E07356-B498-44CD-9522-6B04ACA156E6.jpg) center top #f4f4f4;
-    overflow: hidden;
-    background-size: cover;
-}
-.mb-box{width: 416px; height: auto; padding:15px;  z-index: 2; overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
+body {
+position: relative;
+font-family: "Archivo", serif;
+background-color: #f4f4f4;
+margin: 0;
+overflow: hidden;
+font-size: 22px; /* Increased base font size /
+color: white;
+height: 100vh; / Full viewport height */
 }
+
+#bgc {
+width: 100%;
+height: 100%;
+background: url(../img/IMG_20250509_215012_423.jpg) center top #f4f4f4;
+overflow: hidden;
+background-size: cover;
+}
+
+.mb-box {
+width: 500px; /* Increased width /
+height: auto;
+padding: 30px; / Increased padding /
+z-index: 2;
+overflow: hidden;
+position: absolute;
+top: 30%; / Adjusted position for better vertical alignment /
+left: 50%;
+transform: translate(-50%, -30%); / Adjusted vertical alignment */
+}
+
 .bb {
-    /* margin: 0 auto; */
-    width: 416px;
-    max-height: 609px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px #999;
-    overflow: hidden;
-    background: url(../images/alpha-bg.png);
-    backdrop-filter: blur(5px);
-   
+width: 500px; /* Increased width /
+max-height: 700px; / Increased max height /
+border-radius: 12px; / Slightly rounded corners /
+box-shadow: 0px 0px 30px #999; / Increased shadow size /
+overflow: hidden;
+background: url(../images/alpha-bg.png);
+backdrop-filter: blur(7px); / Slightly stronger blur */
 }
-.bb h2{margin: 15px auto 0px; padding: 20px 0px 10px; width: 280px; font-size:18px; text-align: center; color: #883a78; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+
+.bb h2 {
+margin: 20px auto 0px;
+padding: 30px 0px 15px; /* Increased padding /
+width: 320px; / Increased width /
+font-size: 28px; / Increased font size */
+text-align: center;
+color: white;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+
 .bb_text {
-    height: 100%;
-    /* min-height: 180px; */
-    /* max-height: 300px; */
-    padding: 20px 40px;
-    text-indent: 2em;
-  
-    line-height: 28px;
-    font-size: 16px;
-    color: #303030;
-    overflow: auto;
+height: auto;
+padding: 30px 50px; /* Increased padding /
+text-indent: 3em; / Increased indent /
+line-height: 36px; / Increased line height /
+font-size: 22px; / Increased font size /
+color: white;
+overflow: auto;
+max-height: 550px; / Increased max height /
+overflow-y: auto; / Scrollbar if content overflows */
 }
-.bb_myname{text-align: right; padding: 0px 40px 20px; line-height: 30px; color: #883a78;}
-.mb-x{width: 500px; height: auto; overflow: hidden; margin-top: 260px;}
-.love_time{width: 100%; text-align: center; font-size: 14px; color:#da8e9c;}
-.love_time span{color:#da8e9c;}
-.musicbg{margin-left: -120px; filter: alpha(opacity=50); opacity: .5; position: fixed; bottom: 60px; left: 50%}
-.musicbg:hover{filter: alpha(opacity=90); opacity: .9}
-.banquan{width: 100%; text-align: center; color: #888; position: fixed; bottom: 30px; font-size:14px;}
-.banquan a{color: #888; text-decoration: none;}
+
+.bb_myname {
+text-align: right;
+padding: 0px 50px 30px; /* Increased padding /
+line-height: 36px; / Increased line height /
+color: white;
+font-size: 22px; / Increased font size */
+}
+
+.mb-x {
+width: 600px; /* Increased width /
+height: auto;
+overflow: hidden;
+margin-top: 300px; / Increased margin-top */
+}
+
+.love_time {
+width: 100%;
+text-align: center;
+font-size: 22px; /* Increased font size */
+color: white;
+}
+
+.love_time span {
+color: white;
+}
+
+.musicbg {
+margin-left: -140px; /* Adjusted position /
+filter: alpha(opacity=50);
+opacity: .5;
+position: fixed;
+bottom: 80px; / Adjusted position */
+left: 50%;
+}
+
+.musicbg:hover {
+filter: alpha(opacity=90);
+opacity: .9;
+}
+
+.banquan {
+width: 100%;
+text-align: center;
+color: white;
+position: fixed;
+bottom: 50px; /* Adjusted position /
+font-size: 20px; / Increased font size */
+}
+
+.banquan a {
+color: white;
+text-decoration: none;
+}
+
+/* Faster keyframe animation */
+@keyframes blink {
+0% { opacity: 1; }
+50% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.blinking-text {
+animation: blink 1s linear infinite;
