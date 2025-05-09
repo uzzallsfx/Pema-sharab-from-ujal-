@@ -1,68 +1,131 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <title>For Pema Sharab | Coding with Ujal</title>
-    <meta name="language" content="en-US">
-    <meta name="title" content="For Pema Sharab | Coding with Ujal">
-    <meta name="github" content="https://github.com/Ujal-Development">
-    <meta name="description" content="Collecting resources isn't easy; your star is my motivation to keep going, and PRs are also welcome!">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="js/js.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-</head>
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bilbo+Swash+Caps&family=Inter:opsz,wght@14..32,500&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
 
-<body id="bgc">
-    <div class="mb-box">
-        <div class="bb">
-            <h2>For Pema Sharab</h2>
-            <div class="bb_text">
-                <div id="code">
-                    Hey there<br><br>
-                    I know it might be weird about me popping out of nowhere to tell this thing but Ngoma bay laba chin I am actually attracted to you a lot...<br><br>
-                    Your vibe is different than any other girl I've seen before... you have a different energy radiating around you like a magnetic force to me that I'm getting attracted to...<br><br>
-                    I cannot tell how strong it is as no words can define you... but here I am to express to the fullest I can.<br><br>
-                    You're amazing and graceful. I feel so splendid peeking through my class windows just to have a glance of you, making my weariness fade...<br><br>
-                    I cannot give account for how long, but I know it's been very long that I'm drawn to you. Daro choe gi nou dho wong nga gi shob lab Mae say en ru...<br><br>
-                    I'm just hoping for an amazing future together with you full of dreams and hopes to come true. Mapa choe gi mi ga dho wong nga luu but hope chi ya kayi...<br><br>
-                    And doru phone gi cover gi di nga aum man cc... she is just my old bestie. I kept it coz she kept it first so I kept it also.<br><br>
-                    And nga choe lu face to face lab go di noye but choe gi nga lu dyancha luu ba chin say dro bay nga...<br><br>
-                    And last and final... nga choe Ngoma ra gaa yaaa cc
-                </div>
-            </div>
-            <p class="bb_myname">
-                - Ujal <br>
-            </p>
-        </div>
-    </div>
+body {
+    position: relative;
+    font-family: "Archivo", serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    overflow: hidden;
+    font-size: 22px; /* Increased base font size */
+    color: white;
+    height: 100vh; /* Full viewport height */
+}
 
-    <audio id="media" src="/kitna kuch kehna.mp3" autoplay loop preload="auto"></audio>
+#bgc {
+    width: 100%;
+    height: 100%;
+    background: url(../img/IMG_20250509_215012_423.jpg) center top #f4f4f4;
+    overflow: hidden;
+    background-size: cover;
+}
 
-    <script>
-        Element.prototype.typewriter = function () {
-            var element = this,
-                content = element.innerHTML,
-                index = 0;
-            element.innerHTML = "";
-            var timer = setInterval(function () {
-                var currentChar = content.substr(index, 1);
-                if (currentChar === "<") {
-                    index = content.indexOf(">", index) + 1;
-                } else {
-                    index++;
-                }
-                element.innerHTML = content.substring(0, index);
-                if (index >= content.length) {
-                    clearInterval(timer);
-                }
-            }, 50); // Faster typing speed
-            return this;
-        };
-        document.getElementById("code").typewriter();
-    </script>
+.mb-box {
+    width: 500px; /* Increased width */
+    height: auto;
+    padding: 30px; /* Increased padding */
+    z-index: 2;
+    overflow: hidden;
+    position: absolute;
+    top: 30%; /* Adjusted position for better vertical alignment */
+    left: 50%;
+    transform: translate(-50%, -30%); /* Adjusted vertical alignment */
+}
 
-    <script type="text/javascript" src="js/count.js"></script>
-    <script type="text/javascript" async src="js/su.js"></script>
-</body>
-</html>
+.bb {
+    width: 500px; /* Increased width */
+    max-height: 700px; /* Increased max height */
+    border-radius: 12px; /* Slightly rounded corners */
+    box-shadow: 0px 0px 30px #999; /* Increased shadow size */
+    overflow: hidden;
+    background: url(../images/alpha-bg.png);
+    backdrop-filter: blur(7px); /* Slightly stronger blur */
+}
+
+.bb h2 {
+    margin: 20px auto 0px;
+    padding: 30px 0px 15px; /* Increased padding */
+    width: 320px; /* Increased width */
+    font-size: 28px; /* Increased font size */
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.bb_text {
+    height: auto;
+    padding: 30px 50px; /* Increased padding */
+    text-indent: 3em; /* Increased indent */
+    line-height: 36px; /* Increased line height */
+    font-size: 22px; /* Increased font size */
+    color: white;
+    overflow: auto;
+    max-height: 550px; /* Increased max height */
+    overflow-y: auto; /* Scrollbar if content overflows */
+}
+
+.bb_myname {
+    text-align: right;
+    padding: 0px 50px 30px; /* Increased padding */
+    line-height: 36px; /* Increased line height */
+    color: white;
+    font-size: 22px; /* Increased font size */
+}
+
+.mb-x {
+    width: 600px; /* Increased width */
+    height: auto;
+    overflow: hidden;
+    margin-top: 300px; /* Increased margin-top */
+}
+
+.love_time {
+    width: 100%;
+    text-align: center;
+    font-size: 22px; /* Increased font size */
+    color: white;
+}
+
+.love_time span {
+    color: white;
+}
+
+.musicbg {
+    margin-left: -140px; /* Adjusted position */
+    filter: alpha(opacity=50);
+    opacity: .5;
+    position: fixed;
+    bottom: 80px; /* Adjusted position */
+    left: 50%;
+}
+
+.musicbg:hover {
+    filter: alpha(opacity=90);
+    opacity: .9;
+}
+
+.banquan {
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 50px; /* Adjusted position */
+    font-size: 20px; /* Increased font size */
+}
+
+.banquan a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Faster keyframe animation */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blinking-text {
+    animation: blink 1s linear infinite;
+}
