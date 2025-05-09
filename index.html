@@ -44,7 +44,7 @@ I know it might be weird about me popping out of nowhere to tell this thing but 
                 } else {
                     index++;
                 }
-                element.innerHTML = content.substring(0, index) + (index & 1 ? "_" : "");
+                element.innerHTML = content.substring(0, index) + (index & 1 ? "." : "");
                 if (index >= content.length) {
                     clearInterval(timer);
                 }
