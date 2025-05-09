@@ -7,7 +7,8 @@ body {
     margin: 0;
     overflow: hidden;
     font-size: 18px;
-    color: white; /* Global text color */
+    color: white;
+    height: 100vh; /* Set height to 100% of the viewport */
 }
 
 #bgc {
@@ -21,13 +22,13 @@ body {
 .mb-box {
     width: 416px;
     height: auto;
-    padding: 15px;
+    padding: 20px;
     z-index: 2;
     overflow: hidden;
     position: absolute;
-    top: 50%;
+    top: 40%; /* Position it slightly lower */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%); /* Adjust to center vertically */
 }
 
 .bb {
@@ -46,27 +47,29 @@ body {
     width: 280px;
     font-size: 22px;
     text-align: center;
-    color: white; /* changed */
+    color: white;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
 .bb_text {
-    height: 100%;
+    height: auto;
     padding: 20px 40px;
     text-indent: 2em;
     line-height: 30px;
     font-size: 18px;
-    color: white; /* changed */
+    color: white;
     overflow: auto;
+    max-height: 450px; /* Allow more space for the text to fit */
+    overflow-y: auto; /* Scrollbar if text overflows */
 }
 
 .bb_myname {
     text-align: right;
     padding: 0px 40px 20px;
     line-height: 30px;
-    color: white; /* changed */
+    color: white;
     font-size: 18px;
 }
 
@@ -81,11 +84,11 @@ body {
     width: 100%;
     text-align: center;
     font-size: 16px;
-    color: white; /* changed */
+    color: white;
 }
 
 .love_time span {
-    color: white; /* changed */
+    color: white;
 }
 
 .musicbg {
@@ -105,25 +108,24 @@ body {
 .banquan {
     width: 100%;
     text-align: center;
-    color: white; /* changed */
+    color: white;
     position: fixed;
     bottom: 30px;
     font-size: 16px;
 }
 
 .banquan a {
-    color: white; /* changed */
+    color: white;
     text-decoration: none;
 }
 
-/* Keyframe animation to blink text */
+/* Faster keyframe animation */
 @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
 
-/* Apply animation to the blinking text element */
 .blinking-text {
-    animation: blink 1s linear infinite; /* Faster blinking */
+    animation: blink 1s linear infinite;
 }
