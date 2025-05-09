@@ -65,6 +65,18 @@ body {
     overflow-y: auto;
 }
 
+/* Centered middle text (smaller) */
+.middle-letter {
+    font-size: 18px; /* Smaller font size */
+    text-align: center;
+    margin-top: 100px;
+    transform: translateY(-50%); /* Center vertically */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfect centering */
+}
+
 .bb_myname {
     text-align: right;
     padding: 0px 50px 30px;
