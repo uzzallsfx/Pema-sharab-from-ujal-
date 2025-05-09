@@ -6,7 +6,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     overflow: hidden;
-    font-size: 22px;
+    font-size: 14px; /* Reduced font size */
     color: white;
     height: 100vh;
 }
@@ -20,9 +20,9 @@ body {
 }
 
 .mb-box {
-    width: 500px;
+    width: 350px; /* Reduced width */
     height: auto;
-    padding: 30px;
+    padding: 20px; /* Reduced padding */
     z-index: 2;
     overflow: hidden;
     position: absolute;
@@ -32,20 +32,20 @@ body {
 }
 
 .bb {
-    width: 500px;
-    max-height: 700px;
+    width: 350px; /* Reduced width */
+    max-height: 600px; /* Reduced max height */
     border-radius: 12px;
-    box-shadow: 0px 0px 30px #999;
+    box-shadow: 0px 0px 20px #999; /* Reduced shadow size */
     overflow: hidden;
     background: url(../images/alpha-bg.png);
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(5px); /* Reduced blur effect */
 }
 
 .bb h2 {
-    margin: 20px auto 0px;
-    padding: 30px 0px 15px;
-    width: 320px;
-    font-size: 28px;
+    margin: 15px auto 0px;
+    padding: 20px 0px 10px; /* Reduced padding */
+    width: 270px; /* Reduced width */
+    font-size: 20px; /* Reduced font size */
     text-align: center;
     color: white;
     white-space: nowrap;
@@ -55,34 +55,33 @@ body {
 
 .bb_text {
     height: auto;
-    padding: 30px 50px;
-    text-indent: 3em;
-    line-height: 36px;
-    font-size: 22px;
+    padding: 20px 40px; /* Reduced padding */
+    text-indent: 2em; /* Reduced indent */
+    line-height: 28px; /* Reduced line height */
+    font-size: 16px; /* Reduced font size */
     color: white;
     overflow: auto;
-    max-height: 550px;
+    max-height: 500px; /* Reduced max height */
     overflow-y: auto;
 }
 
-/* Centered middle text (smaller) */
 .middle-letter {
-    font-size: 18px; /* Smaller font size */
+    font-size: 12px; /* Smaller font size */
     text-align: center;
-    margin-top: 100px;
-    transform: translateY(-50%); /* Center vertically */
+    margin-top: 50px;
+    transform: translateY(-50%);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Perfect centering */
+    transform: translate(-50%, -50%);
 }
 
 .bb_myname {
     text-align: right;
-    padding: 0px 50px 30px;
-    line-height: 36px;
+    padding: 0px 40px 20px; /* Reduced padding */
+    line-height: 28px; /* Reduced line height */
     color: white;
-    font-size: 22px;
+    font-size: 16px; /* Reduced font size */
 }
 
 .musicbg {
@@ -105,7 +104,7 @@ body {
     color: white;
     position: fixed;
     bottom: 50px;
-    font-size: 20px;
+    font-size: 16px; /* Reduced font size */
 }
 
 .banquan a {
